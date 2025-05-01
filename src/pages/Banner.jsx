@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import { Typewriter } from "react-simple-typewriter";
-import bannerBg from "../assets/images/pattern logo.jpg";
+import bannerBg from "../assets/images/aigif.gif";
 
 const Banner = () => {
   const bannerStyle = {
@@ -11,28 +11,28 @@ const Banner = () => {
     color: "white",
     minHeight: "100vh",
     display: "flex",
-    alignItems: "center",
-    backgroundImage: `linear-gradient(#012b5c,rgba(1, 43, 92, 0.39)), url(${bannerBg})`,
-    backgroundSize: "fit",
-    
-  
-    backgroundRepeat: "repeat",
-    zIndex: 1,
+    backgroundImage: `linear-gradient( #012b5c,rgba(1, 43, 92, 0.33)), url(${bannerBg})`,
+    backgroundSize: "cover",
+
+    backgroundRepeat: "no-repeat",
+    zIndex: 1
   };
 
   return (
-    <div style={bannerStyle} className="py-5">
-      <div className="container">
+    <div style={bannerStyle} className="py-5 ">
+      <div className="container-fluid p-5 ">
         <div className="row align-items-center">
           {/* Left Column */}
-          <div className="col-md-6 text-white text-center text-md-start mb-4 mb-md-0">
+          <div className="col-md-5 text-white text-center text-md-start mb-4 mb-md-0">
             <h1 className="fw-bold" style={{ fontSize: "2.8rem" }}>
               <Typewriter
-                words={[ "Legal Assistance Made Simple",
+                words={[
+                  "Legal Assistance Made Simple",
                   "Expert Legal Guidance",
                   "Connect with Lawyers",
                   "Resolve Legal Issues",
-                  "Professional Legal Support",]}
+                  "Professional Legal Support"
+                ]}
                 loop={false}
                 cursor
                 cursorStyle="|"
@@ -52,14 +52,16 @@ const Banner = () => {
                 style={{
                   backgroundColor: "#ffc107",
                   color: "#000",
-                  padding: "0.5rem 1.5rem",
+                  border: "2px solid white"
                 }}
               >
                 Find a Lawyer
               </Link>
               <button
-                className="btn btn-light fw-bold"
-                style={{ padding: "0.5rem 1.5rem" }}
+                className="btn bg-white text-black fw-bold shadow-lg"
+                style={{
+                  border: "3px solid #ffc107"
+                }}
               >
                 Learn More
               </button>
@@ -67,13 +69,13 @@ const Banner = () => {
           </div>
 
           {/* Right Column */}
-          <div className="col-md-6 text-center">
+          <div className="col-md-7 text-center">
             <img
               src={logo}
               alt="LawForLayman Logo"
-              className="img-fluid"
+              className="img-fluid mt-5 opacity-25"
               data-aos="zoom-in-up"
-              style={{ maxWidth: "60%", height: "auto", borderRadius: "50%" }}
+              style={{ maxWidth: "65%", height: "auto", borderRadius: "50%" }}
             />
           </div>
         </div>

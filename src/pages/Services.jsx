@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-import bgImage from "../assets/images/service.png"; 
+import bgImage from "../assets/images/servicegif.gif"; 
 import law from "../assets/images/law-profession.jpg"
 
 const services = [
@@ -26,10 +26,9 @@ const services = [
 
 const Services = () => {
   const sectionStyle = {
-    backgroundImage: `linear-gradient(#012b5c,rgba(1, 43, 92, 0.17)), url(${bgImage})`,
-    backgroundSize: "fit",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
+    backgroundImage: `linear-gradient(#012b5c,rgba(1, 43, 92, 0.39)), url(${bgImage})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "repeat",
     color: "white"
   };
 
@@ -43,15 +42,15 @@ const Services = () => {
           <img
             src={law}
             alt="law"
-            className="rounded-circle mb-3"
-            style={{ width: "200px", height: "200px", objectFit: "fit" }}
+            className="rounded-circle mb-5 opacity-25"
+            style={{ width: "350px", height: "350px", objectFit: "fit" }}
           />
         </div>
 
-        <div className="row g-4">
+        <div className="row g-4 ">
           {services.map((service, index) => (
             <div
-              className="col-12 col-md-6 col-lg-4 animate__animated animate__fadeInUp"
+              className="col-12 col-md-6  col-lg-4 animate__animated animate__fadeInUp"
               style={{
                 animationDelay: `${index * 0.2}s`,
                 animationDuration: "0.8s"
@@ -59,7 +58,7 @@ const Services = () => {
               key={index}
             >
               <div
-                className="card h-100 shadow-lg border-0 card-hover"
+                className="card h-100 mb-2 shadow-lg border-0  card-hover"
                 style={{ borderRadius: "1rem", backgroundColor: "#ffffffdd" }}
               >
                 <div className="card-body text-start">

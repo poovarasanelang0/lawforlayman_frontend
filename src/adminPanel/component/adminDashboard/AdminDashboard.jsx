@@ -1,11 +1,11 @@
-import React from "react";
-import Sidebar from "./Sidebar";
-import Header from "./Header";
-import OverviewCards from "./OverviewCards";
-import AssignedCases from "./AssignedCase";
+import React from 'react'
+import Sidebar from './Sidebar';
+import Header from './Header';
  import bgImage from "../../../assets/images/service.png"; 
+import SummaryCards from './Summarycard';
+import RecentComplaints from './RecentComplaints';
 
-const LawyerDashboard = () => {
+const AdminDashboard = () => {
   return (
     <div
       className="d-flex flex-md-row vh-100 overflow-hidden"
@@ -24,12 +24,13 @@ const LawyerDashboard = () => {
           className="flex-grow-1 overflow-auto p-3 opacity-75"
           style={{ backgroundColor: "#144481" }}
         >
-          <OverviewCards />
-          <AssignedCases />
+            <SummaryCards/>
+            <RecentComplaints/>
+         
         </main>
       </div>
     </div>
   );
-};
+}
 
-export default LawyerDashboard;
+export default AdminDashboard

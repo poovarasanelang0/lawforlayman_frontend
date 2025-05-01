@@ -9,20 +9,32 @@ import Benefits from '../Benefits';
 import HowItWorks from '../HowitsWorks';
 import ResultsExpected from '../ResultsExpected';
 import OurLatest from '../OurLatest';
+import ReviewsSection from '../ReviewsSection';
+import LawyerDuties from '../LawyerDuties';
+import FAQSection from './FAQComponent';
+import RegisterButton from '../../components/RegisterButton';
+import BackToTop from '../../components/BackToTop';
 
 const Home = () => {
   return (
     <div>
       <Banner />
+      <BackToTop />
+      <RegisterButton />
       <Services />
-      <AllInOnePlatform/>
-      <HowItWorks/>
+      <RegisterButton />
+      <AllInOnePlatform />
+      <RegisterButton />
+      <HowItWorks />
+      <LawyerDuties />
       <RealProblems />
-      <Benefits/>
-      <ResultsExpected/>
-      <OurLatest/>
-      <WhyCustomersLoveUs/>
-      <Contact/>
+      <Benefits />
+      <ResultsExpected />
+      <OurLatest />
+      <WhyCustomersLoveUs />
+      <ReviewsSection />
+      <FAQSection />
+      <Contact />
     </div>
   );
 }
