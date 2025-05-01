@@ -11,7 +11,7 @@ import ForgotPassword from "../lawyerPanel/component/forgotPassword/ForgotPasswo
 import LawyerDashboard from "../lawyerPanel/component/lawyerDashboard/LawyerDashboard";
 import RegisterComplaint from "../clientPanel/component/registerComplaint/RegisterComplaint";
 import TrackComplaint from "../clientPanel/component/trackComplaint/TrackComplaint";
-import AdminDashboard from "../adminPanel/component/adminDashboard/adminDashboard";
+import AdminDashboard from "../adminPanel/component/adminDashboard/AdminDashboard";
 
 
 const AppRoutes = () => {
