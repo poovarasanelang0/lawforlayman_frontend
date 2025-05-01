@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="row gy-4">
           <div className="col-12 col-md-3">
             <h5 className="fw-bold">LawForLayman</h5>
-            <p>Making legal services accessible to everyone.</p>
+            <p>Making legal services accessible b to everyone.</p>
           </div>
 
           <div className="col-6 col-md-3">
